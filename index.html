@@ -38,9 +38,10 @@ This file except where otherwise noted is copyright by Alex Watkins.
                     <!-- Navigation Bar Content -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-						    <li><a class="navLink" href="#experience">Experience</a></li>
+						                <li><a class="navLink" href="#experience">Experience</a></li>
                             <li><a class="navLink" href="#education">Education</a></li>
-							<li><a class="navLink" href="#projects">Projects</a></li>
+                            <li><a class="navLink" href="#publications">Publications</a></li>
+							              <li><a class="navLink" href="#projects">Projects</a></li>
                             <li><a class="navLink" href="#activities">Activities</a></li>
                             <li><a class="navLink" href="#programming">Programming</a></li>
                             <li><a class="navLink" href="#contact">Contact</a></li>
@@ -80,16 +81,50 @@ This file except where otherwise noted is copyright by Alex Watkins.
                     <div class="experienceContainer">
                         <h1 class="center">Experience</h1>
                         <div class="contentItemPadder">
+                            <img src="images/logos/a_fintech.png" style="max-width: 350px;"/>
+                            <br />
+                            <p>Software Development Engineer</p>
+                            <p>Built ETL big data pipelines for migrating Amazon finances between SOX compliant financial systems</p>
+                            <ul>
+                              <li>Migrated data set of billions of fixed financial assets from an Oracle database into a new noSQL
+database with 100% data accuracy.</li>
+                              <li>Converted 1000s of infrastructure components from existing templates into Amazon CDK code</li>
+                            </ul>
+                        </div>
+                        <div class="contentItemPadder">
+                            <img src="images/logos/a_r53.png" style="max-width: 350px;"/>
+                            <br />
+                            <p>Software Development Engineer</p>
+                            <p>Wrote distributed system DNS software to manage customer network configurations</p>
+                            <ul>
+                              <li>Developed custom canary for measuring availability of webservers and API</li>
+                              <li>Redesigned customer DNS query producer to reach 100% availability inside the Amazon network</li>
+                              <li>Designed new deployment mechanism to decrease deployment time from 8 hours to 9 minutes</li>
+                              <li>Developed packet logging mechanism to deliver DNS logs for trillions of queries every second</li>
+                              <li>Designed and implemented a custom DNS64 resolver for customers on NAT64</li>
+                            </ul>
+                        </div>
+                        <div class="contentItemPadder">
                             <img src="images/logos/amazon.png" style="max-width: 350px;"/>
                             <br />
                             <p>Software Development Engineer Intern</p>
-                            <p>Developed webserver software for Amazon AWS S3</p>
+                            <p>Worked on query team which handles incoming API requests and GET object requests</p>
+                            <ul>
+                              <li>Developed new approach to end user logging which recovered thousands of previously deleted
+user logs per hour</li>
+                              <li>Recovered delete requests saving on storage costs in the 10s of Petabytes per day</li>
+                            </ul>
                         </div>
                         <div class="contentItemPadder">
                             <h2>Nexus Craft</h2>
                             <br />
-                            <p>Manager of self owned software company</p>
+                            <p>Founder and Managing Member</p>
                             <p>Developed web and mobile based applications.</p>
+                            <ul>
+                              <li>Developed Clothes Log. Clothes Log is a cross platform application that allows users to organize clothes and decide what to wear. Clothes log is available as an application on the iOS App Store as well as a web application.</li>
+                              <li>Developed Vertical Maze. Vertical maze is am iOS game where the user attempts to move a blue dot through a scrolling maze.</li>
+                              <li>Developed Convert Colors. Convert Colors is an iOS application that allows users to easily convert HTML colors codes between HEX, HSL, and RGB.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -103,19 +138,47 @@ This file except where otherwise noted is copyright by Alex Watkins.
                                 <img class="center heightLimiter" src="images/logos/gtLogo.png" alt="Georgia Institute of Technology" />
                             </a>
                             <br />
-                            <p>Candidate for Bachelor of Science in Computer Science</p>
-                            <p>Expected graduation in May, 2018</p>
-                            <p>Threads: Information Internetworks + Systems and Architecture</p>
+                            <p>Bachelor of Science in Computer Science</p>
+                            <p>Graduated in May, 2018</p>
+                            <p>Concentration: Networking, Systems, Databases, and Architecture</p>
                         </div>
                         <br />
                         <div class="contentItemPadder">
-                            <a href="http://charlottechristian.com" target="_blank">  
+                            <a href="http://charlottechristian.com" target="_blank">
                                 <img class="center heightLimiter" src="images/logos/ccsLogo.png" alt="Charlotte Christian School" />
                             </a>
                             <br />
                             <p>Received a High School Diploma in May, 2015</p>
                             <p>Graduated with Distinction in Math and Science</p>
-                            <p>GPA: 3.9/4.0</p>
+                        </div>
+                    </div>
+                </div>
+            <!-- Publications -->
+                <div class="contentContainer contentContainerAlt">
+                    <a id="publications" class="navLinkTarget"></a>
+                    <div class="publicationsContainer">
+                        <h1 class="center">Publications</h1><br />
+                        <div class="contentItemPadder">
+                            <h2>A Fast and Simple Approach to Merge and Merge Sort using Wide Vector Instructions</h2>
+                            <br />
+                            <p>A Watkins, O Green - 2018 IEEE/ACM 8th Workshop on Irregular Applications: Architectures and Algorithms (IA3)</p>
+                            <p><a href="https://ieeexplore.ieee.org/document/8638394" target="_blank">IEEE Link</a></p>
+                            <ul>
+                              <li>Outlined a novel SIMD merge sort that performed 2.94X faster than a standard merge sort.</li>
+                              <li>Reduced overhead due to non-parallel sorting and branch prediction by a factor of 5</li>
+                              <li>Explored use of new Gather and Scatter instructions in AVX-512</li>
+                            </ul>
+                        </div>
+                        <br />
+                        <div class="contentItemPadder">
+                            <h2>Logarithmic Radix Binning and Vectorized Triangle Counting</h2>
+                            <br />
+                            <p>Oded Green, James Fox, Alex Watkins, Alok Tripathy, Kasimir Gabert, Euna Kim, Xiaojing An, Kumar Aatish, David A Bader - 2018 IEEE High Performance extreme Computing Conference (HPEC)</p>
+                            <p><a href="https://ieeexplore.ieee.org/document/8547581" target="_blank">IEEE Link</a></p>
+                            <ul>
+                              <li>Created a vectorized version of the triangle counting algorithm (used in graph searching)
+performing 2x-5x faster than a serial triangle counting algorithm</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -399,16 +462,18 @@ This file except where otherwise noted is copyright by Alex Watkins.
                     <div class="experienceContainer">
                         <h1 class="titleSpecialCenter">Programming Experience</h1>
                         <div class="contentItemPadder">
-                            <img src="images/languages/java.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="Java" />                      
-                            <img src="images/languages/c.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="C" />                       
-                            <img src="images/languages/html.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="HTML" />                       
-                            <img src="images/languages/css.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="CSS" />                        
-                            <img src="images/languages/python.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="Python" />                        
-                            <img src="images/languages/objC.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="Objective C" />                      
-                            <img src="images/languages/swift.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="Swift" />                       
+                            <img src="images/languages/java.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="Java" />
+                            <img src="images/languages/c.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="C" />
+                            <img src="images/languages/ruby.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="Ruby" />
+                            <img src="images/languages/typescript.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="Typescript" />
+                            <img src="images/languages/html.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="HTML" />
+                            <img src="images/languages/css.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="CSS" />
+                            <img src="images/languages/python.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="Python" />
+                            <img src="images/languages/objC.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="Objective C" />
+                            <img src="images/languages/swift.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="Swift" />
                             <img src="images/languages/mysql.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="MySql" />
-                            <img src="images/languages/js.jpg" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="JavaScript" />                       
-                            <img src="images/languages/php.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="PHP" />                       
+                            <img src="images/languages/js.jpg" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="JavaScript" />
+                            <img src="images/languages/php.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="PHP" />
                             <img src="images/languages/cplusplus.png" class="widthLimiterSmall heightLimiterLarge imageBorder" alt="C++" />
                         </div>
                     </div>
@@ -455,9 +520,9 @@ This file except where otherwise noted is copyright by Alex Watkins.
                 }
               });
             });
-            
+
             $('body').scrollspy({ target: '#navbar-main' });
-            
+
             $(function() {
                 var form = $('#contactForm');
 
@@ -494,14 +559,14 @@ This file except where otherwise noted is copyright by Alex Watkins.
                     });
                 });
             });
-            
+
             function showProject(num) {
                 hideAllProjects();
                 $('#project' + num).show();
                 $('#projectButton' + num).addClass('active');
                 $('#projectLink' + num).addClass('activeSpecial');
             }
-            
+
             function hideAllProjects() {
                 $('#project1').hide();
                 $('#project2').hide();
@@ -526,7 +591,7 @@ This file except where otherwise noted is copyright by Alex Watkins.
                     variableWidth: true
               });
             });
-            
+
             $('.nav a').on('click', function(){
                 var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
                 if (width < 993) {
